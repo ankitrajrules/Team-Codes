@@ -60,7 +60,6 @@ io.on("connection", (socket) => {
 			status: ACTIONS.ONLINE,
 			socketId: socket.id,
 		});
-		console.log(roomId, socket.rooms);
 		// Send clients list to all sockets in room
 		io.to(roomId).emit(ACTIONS.UPDATE_CLIENTS_LIST, { clients });
 	});
