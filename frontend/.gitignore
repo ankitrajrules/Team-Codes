@@ -31,4 +31,4 @@ public/style.css
 TODO.md
 
 #Testing in Netlify
-vercel.json
+netlify.toml
